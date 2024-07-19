@@ -1,0 +1,135 @@
+/* Glassmorphic Footer Styles */
+.glassmorphic-footer {
+   background:linear-gradient(45deg, rgba(237, 198, 112, 0.6), rgba(237, 198,112, 0.4));
+backdrop-filter: blur(4px);
+box-shadow: 0 0 20px #000;
+    border-radius: 15px;
+    border: 2px solid rgba(93, 68, 0, 0.5);
+    color: #F2F1DC; /* Neutral color */
+    width:100vw;
+    font-family:"Protest Revolution";
+   margin-top:5em;
+   
+  
+
+  
+}
+
+
+.footer-contnt{
+width:100vw;
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+grid-template-rows:auto;
+grid-auto-flow:column;
+gap:5px;
+margin-left:20px;
+}
+
+.footer-section.first-section{
+grid-column-start:1;
+grid-column-end:2;
+display:flex;
+height:min-content;
+align-items:start;
+flex-direction:column;
+width: 100%;
+}
+
+.footer-section.second-section{
+display:flex;
+flex-direction:column;
+grid-column-start:2;
+grid-column-end:3;
+width:100%;
+
+
+}
+
+.footer-section.third-section{
+display:flex;
+flex-direction:column;
+flex-wrap:wrap;
+grid-column-start:3;
+grid-column-end: 4;
+width:100%;
+}
+
+.footer-section {
+p{
+	font-size:1em;
+}
+}
+
+.footer-section > h3 {
+    color: var(--color-on-primary); /* Primary color */
+    font-size: 1.5em;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    
+   
+}
+
+.footer-section p,
+.footer-section a {
+    color: var(--color-on-primary-container); /* Neutral color */
+    text-decoration: none;
+    
+}
+
+.footer-section a:hover {
+    background-color:rgba(255,0,0,0.5);
+    color:var(--color-primary);
+}
+
+.social-icons, .footer-copyright, .footer-links {
+    display:block;
+    box-sizing: border-box;
+   
+}
+.footer-section.second-section{
+    h3{
+        margin-bottom:10px;
+    }
+}
+.social icons {
+   
+   padding-top:10px;
+    
+}
+
+.social-icons > a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color:rgba(255,0,0,0.5);
+    color:var(--color-primary);
+    transition: background 0.3s ease;
+    
+}
+
+.footer-links > a {
+
+    border-radius: 5px;
+        background-color:rgba(255,0,0,0.5);
+    color:var(--color-primary);
+    transition: background 0.3s ease;
+}
+.social-icons a:hover {
+    background: rgba(73, 156, 166, 0.5); /* Secondary color with transparency */
+}
+
+.footer-links a:hover{
+    background-color:rgba(255,0,0,0.5);
+    color:var(--color-primary);
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}

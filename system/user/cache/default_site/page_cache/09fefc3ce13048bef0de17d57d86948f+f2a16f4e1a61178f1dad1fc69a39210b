@@ -1,0 +1,50 @@
+a:3:{s:4:"time";i:1721347470;s:3:"ttl";i:0;s:4:"data";s:2508:"{layout="layouts/_wrapper"}
+{!-- ra:00000000000003a70000000000000000 --}
+<div class="call-to-action">
+<div class="goals"><h1>Reach Your Goals With No Limits!</h1></div>
+
+<div class="homepage_logo">
+<img src="https://nolimitsmaf.great-site.net/uploads/images/Logo/NLMAF_LOGO_2shues_smallcropped.png" alt="NLMAF_LOGO_2shues_smallcropped" />
+</div>
+
+<div class="button-div"><button class="join-button" popovertarget="registration">Join Us!</button></div>
+{!-- ra:00000000000003960000000000000000 --}<form id="register_member_form" class="ee-cform " method="post" action="https://nolimitsmaf.great-site.net/"  >
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="{AID:Member:register_member}" />
+<input type="hidden" name="RET" value="member/registration/success" />
+<input type="hidden" name="FROM" value="" />
+<input type="hidden" name="P" value="hgyVcAShxvvJ5Wa3n3GyavaYW9XRfY0ZRPBIUCakNo9GR7swn65F9kV2OI3RcRtq3u7f5AHOeUhotTatJp41uVjv8D3qJT5nXcm5rlYJSZCa5nekbTL0zLDxQcXgM3AN" />
+<input type="hidden" name="site_id" value="1" />
+<input type="hidden" name="csrf_token" value="{csrf_token}" />
+</div>
+
+
+<div popover="auto" class="registration-form" id="registration">
+    <fieldset class="nolimits-registration">
+        <h4>Membership Application</h4>
+        <p><label for="first-name">First Name</label><label for="last-name">Last Name</label><br/>
+        <input type="text" name="first-name" id="first-name" value="{!-- ra:00000000000003870000000000000000 --}{if first-name}{first-name}{/if}"/><input type="text" name="last-name" value="{!-- ra:00000000000003760000000000000000 --}{if last-name}{last-name}{/if}"/>
+        </p>
+   
+        <p>
+            <label for="email">Email</label><br/>
+            <input type="text" name="email" id="email" value="dtyronestrand@icloud.com"/>
+        </p>
+        <p>
+            <label for="username">Username</label><br/>
+            <input type="text" name="username" id="username" value="deve"/>
+        </p>
+        <p>
+        <label for="password">Password</label><br/>
+        <input type="password" name="password" id="password" value="{!-- ra:00000000000003530000000000000000 --}{if password}{password}{/if}"/>
+        </p>
+        <p>
+            <label for="password_confirm">Confirm Password</label><br/>
+            <input type="password" name="password_confirm" value=""/>
+        </p>
+    </fieldset>
+    <input type="submit" value="Register"class="registration-btn"/>
+</div>
+
+</form>{!-- ra:00000000000003980000000000000000 --}
+</div>";}

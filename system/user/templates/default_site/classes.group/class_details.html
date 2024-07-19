@@ -1,0 +1,10 @@
+{layout="layouts/_wrapper"}
+{exp:channel:entries channel="class_details"}
+{class_info}
+<h1><a href="{page_url}">{class_info:class_name}</a></h1>
+<p>{class_info:description}</p>
+<div class="class-detail-icon">{class_info:file wrap="image"}</div>
+{class_docs}
+<div class="class-documents">{class docs:file}</div>
+{/class_info}
+{/exp:channel:entries}

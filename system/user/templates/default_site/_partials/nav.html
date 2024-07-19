@@ -1,0 +1,18 @@
+		
+		<nav><a class="nav-logo" href="{path="home/index"}">No Limits Martial Arts and Fittness</a>
+		<span>{exp:structure:nav start_from="/home/index.html" show_depth="4"}</span><button popovertarget="login" class="nav-signin">Sign In</button>
+
+</div>
+{sign_in}
+</nav>
+
+<script>
+	let nav = document.querySelector("nav");
+		window.onscroll - function(){
+			if(documnt.getElement.scrollTop > 20 ){
+			nav.classList.add("sticky");
+			}else {
+			nav.classList.remove("sticky");
+			}
+		}
+</script>

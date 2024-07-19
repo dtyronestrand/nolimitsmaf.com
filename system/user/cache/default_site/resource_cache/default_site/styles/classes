@@ -1,0 +1,70 @@
+a:3:{s:4:"time";i:1721321754;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1721321676;s:13:"template_data";s:1158:".classes-main {
+	
+	display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    flex-direction:column;
+    color:var(--color-on-primary);
+    align-items:start;
+    justify-content:center;
+    height:100%;
+
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+ @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+.cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.card-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.card-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: white;
+  overflow-y: scroll;
+  transition: 0.8s ease;
+}
+
+.card:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+
+
+
+
+Resources";}}

@@ -1,0 +1,129 @@
+a:3:{s:4:"time";i:1721252306;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1721252299;s:13:"template_data";s:4073:"/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+
+.protest-revolution-regular {
+  font-family: "Protest_Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6{
+font-family:"Protest Revolution";
+}
+p {
+font-size:18pt;
+}
+html{
+height:100vh;
+}
+body{
+display:flex;
+flex-direction:column;
+  height:100%;
+  width: 100%;
+ /* background: #ff0000;
+  background: linear-gradient(
+    to top,
+    #ff0000,#fdcf58,#fdcf58
+  ) center center fixed;*/
+background: rgb(238,43,10);
+background: linear-gradient(45deg, rgba(238,43,10,1) 0%, rgba(241,151,6,1) 35%, rgba(241,246,13,1) 100%) center center fixed;
+  
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+:root {
+    --nlmaaf-display-small: Roboto;
+
+    /* font sizes */
+    --nlmaaf-display-small-size: 2.25rem;
+    --m3-label-large-size: 0.875rem;
+    --m3-body-small-size: 0.75rem;
+    --gap-xl: 1.25rem;
+    --gap-2xs-3: 0.643rem;
+  
+    /* Paddings */
+    --padding-xl: 1.25rem;
+    --padding-2xs: 0.687rem;
+    --padding-smi-5: 0.781rem;
+  
+    /* Effects */
+    --m3-elevation-light-1: 0px 1px 2px rgba(0, 0, 0, 0.3),
+      0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  
+    --transition: 250ms ease-out;
+
+    /* Colors */
+  --color-primary: rgb(255 255 255);
+  --color-surface-tint: rgb(220 200 0);
+  --color-on-primary: rgb(55 49 0);
+  --color-primary-container: rgb(236 214 0);
+  --color-on-primary-container: rgb(36 32 0);
+  --color-secondary: rgb(255 204 154);
+  --color-on-secondary: rgb(51 27 0);
+  --color-secondary-container: rgb(247 149 0);
+  --color-on-secondary-container: rgb(0 0 0);
+  --color-tertiary: rgb(255 186 175);
+  --color-on-tertiary: rgb(55 0 0);
+  --color-tertiary-container: rgb(255 85 64);
+  --color-on-tertiary-container: rgb(0 0 0);
+  --color-error: rgb(255 186 177);
+  --color-on-error: rgb(55 0 1);
+  --color-error-container: rgb(255 84 73);
+  --color-on-error-container: rgb(0 0 0);
+  --color-background: rgb(21 20 8);
+  --color-on-background: rgb(232 226 207);
+  --color-surface: rgb(18 19 22);
+  --color-on-surface: rgb(251 250 254);
+  --color-surface-variant: rgb(66 71 77);
+  --color-on-surface-variant: rgb(199 203 210);
+  --color-outline: rgb(159 163 170);
+  --color-outline-variant: rgb(127 131 138);
+  --color-shadow: rgb(0 0 0);
+  --color-scrim: rgb(0 0 0);
+  --color-inverse-surface: rgb(226 226 230);
+  --color-inverse-on-surface: rgb(40 42 45);
+  --color-inverse-primary: rgb(81 73 0);
+  --color-primary-fixed: rgb(251 228 0);
+  --color-on-primary-fixed: rgb(20 17 0);
+  --color-primary-fixed-dim: rgb(220 200 0);
+  --color-on-primary-fixed-variant: rgb(61 55 0);
+  --color-secondary-fixed: rgb(255 220 189);
+  --color-on-secondary-fixed: rgb(30 13 0);
+  --color-secondary-fixed-dim: rgb(255 184 109);
+  --color-on-secondary-fixed-variant: rgb(81 46 0);
+  --color-tertiary-fixed: rgb(255 218 212);
+  --color-on-tertiary-fixed: rgb(45 0 0);
+  --color-tertiary-fixed-dim: rgb(255 180 168);
+  --color-on-tertiary-fixed-variant: rgb(116 1 0);
+  --color-surface-dim: rgb(18 19 22);
+  --color-surface-bright: rgb(56 57 60);
+  --color-surface-container-lowest: rgb(12 14 17);
+  --color-surface-container-low: rgb(26 28 31);
+  --color-surface-container: rgb(30 32 35);
+  --color-surface-container-high: rgb(40 42 45);
+  --color-surface-container-highest: rgb(51 53 56);
+  --md-extended-color-custom-color1-color: rgb(255 187 163);
+  --md-extended-color-custom-color1-on-color: rgb(47 10 0);
+  --md-extended-color-custom-color1-color-container: rgb(253 89 0);
+  --md-extended-color-custom-color1-on-color-container: rgb(0 0 0);
+  --md-extended-color-custom-color2-color: rgb(255 249 244);
+  --md-extended-color-custom-color2-on-color: rgb(60 47 0);
+  --md-extended-color-custom-color2-color-container: rgb(251 202 0);
+  --md-extended-color-custom-color2-on-color-container: rgb(35 26 0);
+
+  
+  }
+
+  @media screen and (max-width: 1024px) {
+    img.b {
+      left: 50%;
+      margin-left: -512px;
+      
+    }
+  }
+";}}

@@ -1,0 +1,13 @@
+{exp:channel:entries channel="staff_directory" dynamic="no"}
+{staff_info}
+<div class="staff-card" data-tilt data-tilt-glare data-tilt-max-glare="0.8" data-tilt-scale="1.1">
+    <center>
+      {staff_info:file wrap="image"}
+      <h2>{staff_info:name}</h2>
+      <p>
+       {staff_info:bio}
+      </p>
+    </center>
+</div>
+{/staff_info}
+{/exp:channel:entries}

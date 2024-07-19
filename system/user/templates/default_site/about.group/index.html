@@ -1,0 +1,13 @@
+{layout="layouts/_wrapper"}
+{exp:channel:entries channel="about" limit="1"}
+
+<div class="about">
+	<h1>We Are No Limits!</h1>
+	<p class="about-text">{page_content}</p>
+	<h1>Meet Our Team</h1>
+	<section class="staff-card-container">
+		{embed="about/staff_card" dynamic="no"}
+	</section>
+</div>
+
+{/exp:channel:entries}
