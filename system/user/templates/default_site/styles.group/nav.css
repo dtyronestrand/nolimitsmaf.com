@@ -5,13 +5,13 @@ nav {
 	align-content:space-between;
 	font-family:"Protest Revolution";
 	font-size: 1.5em;
-	 background:linear-gradient(45deg, rgba(237, 198, 112, 0.6), rgba(237, 198,112, 0.4));
-backdrop-filter: blur(4px);
+	 background:linear-gradient(45deg, rgba(255,150,44, 0.4), rgba(255,150, 44, 0.2));
+backdrop-filter: blur(3px);
 box-shadow: 0 0 20px #000;
     border-radius: 15px;
-    border: 2px solid rgba(93, 68, 0, 0.5);
+    border: 2px solid rgba(144, 77, 0, 0.5);
 		/*background: rgba( 255, 255, 0, 0.2);*/
-	color: var(--color-on-secondary-container);
+	color: var(--color-on-primary);
 	margin:0;
 	
 }
@@ -71,7 +71,7 @@ nav a{
 }
 
 nav a:hover, .nav-signin:hover {
-	background:rgba(255, 0, 0, 0.5);;
-	color:var(--color-primary);
+	background:rgba(22,42,81, 0.5);
+	color:var(--color-on-secondary-container);
 }
 
