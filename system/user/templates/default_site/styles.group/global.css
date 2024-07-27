@@ -18,11 +18,13 @@ font-size:18pt;
 }
 
 body{
-display:flex;
-flex-direction:column;
-
-  max-width: 100vw;
-  overflow-y:scroll;
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+overflow-y: scroll;
+overscroll-behavior:none;
  /* background: #ff0000;
   background: linear-gradient(
     to top,
@@ -33,6 +35,17 @@ background: linear-gradient(45deg, rgba(238,43,10,1) 0%, rgba(241,151,6,1) 35%, 
   background-image:url(https://nolimitsmaf.great-site.net/uploads/images/flames-1645399_1280.jpg);
   background-repeat:no-repeat;
   background-size:cover;
+  
+}
+
+.breadcrumbs{
+	color:var(--color-inverse-on-surface);
+    padding-left:30px;
+	a{
+    	text-decoration:none;
+        font-size:large;
+        color:var(--color-inverse-on-surface);
+    }
 }
 
 :root {

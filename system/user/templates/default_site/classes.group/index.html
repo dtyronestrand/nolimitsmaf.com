@@ -5,11 +5,11 @@
 <div class="cards">
 {exp:channel:entries channel="class_details" dynamic="no"}
 {class_info}
-  <div class="card">
+ <a href="{page_url}"> <div class="card">
     <h2 class="card-title">{class_info:class_name}</h2>
     <img src="{class_info:file}" alt="{class_info:alt-txt}">
     <p class="card-desc">{class_info:description}</p>
-  </div>
+  </div></a>
 {/class_info}
 {/exp:channel:entries}
 </div>

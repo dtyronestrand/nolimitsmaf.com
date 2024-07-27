@@ -1,15 +1,16 @@
 {exp:member:registration_form return="member/registration/success"}
 <div popover="auto" class="registration-form" id="registration">
     <fieldset class="nolimits-registration">
-        <h4>Membership Application</h4>
-        <p><label for="first-name">First Name</label><label for="last-name">Last Name</label><br/>
-        <input type="text" name="first-name" id="first-name" value="{if first-name}{first-name}{/if}"/><input type="text" name="last-name" value="{if last-name}{last-name}{/if}"/>
-        </p>
-   
-        <p>
+        <h4>Create Account</h4>
+        <p><label for="first-name">First Name</label>
+            <input type="text" name="first-name" id="first-name" value="{if first-name}{first-name}{/if}"/><label
+                    for="last-name">Last Name</label><input type="text" id="last-name" name="last-name"
+                                                            value="{if last-name}{last-name}{/if}"/>
+
             <label for="email">Email</label><br/>
             <input type="text" name="email" id="email" value="{if email}{email}{/if}"/>
         </p>
+
         <p>
             <label for="username">Username</label><br/>
             <input type="text" name="username" id="username" value="{if username}{username}{/if}"/>
@@ -20,9 +21,9 @@
         </p>
         <p>
             <label for="password_confirm">Confirm Password</label><br/>
-            <input type="password" name="password_confirm" value=""/>
+            <input type="password" id="password_confirm" name="password_confirm" value=""/>
         </p>
     </fieldset>
-    <input type="submit" value="Register"class="registration-btn"/>
+    <input type="submit" value="Register" class="registration-btn"/>
 </div>
 {/exp:member:registration_form}

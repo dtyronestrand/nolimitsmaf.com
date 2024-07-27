@@ -1,14 +1,19 @@
 /* Glassmorphic Footer Styles */
 .glassmorphic-footer {
+  padding: 20px 0;
+    position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
    background:linear-gradient(45deg, rgba(255, 150, 44, 0.6), rgba(255, 150,44, 0.4));
 backdrop-filter: blur(4px);
 box-shadow: 0 0 20px #000;
     border-radius: 15px;
     border: 2px solid rgba(144, 77, 0, 0.5);
     color: var(--color-on-primary); /* Neutral color */
-    width:100vw;
     font-family:"Protest Revolution";
-   margin-top:5em;
+    height:min-content;
+    margin-top:5em;
 }
 
 
