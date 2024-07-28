@@ -2,15 +2,15 @@
 .glassmorphic-footer {
   padding: 20px 0;
     position: relative;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   width: 100%;
-   background:linear-gradient(45deg, rgba(255, 150, 44, 0.6), rgba(255, 150,44, 0.4));
+   background:linear-gradient(45deg, rgba(239, 173, 33, 0.6), rgba(239, 173,33, 0.4));
 backdrop-filter: blur(4px);
 box-shadow: 0 0 20px #000;
     border-radius: 15px;
     border: 2px solid rgba(144, 77, 0, 0.5);
-    color: var(--color-on-primary); /* Neutral color */
+    color: var(--color-on-surface); /* Neutral color */
     font-family:"Protest Revolution";
     height:min-content;
     margin-top:5em;
@@ -63,7 +63,7 @@ p{
 }
 
 .footer-section > h3 {
-    color: var(--color-on-primary); /* Primary color */
+    color: var(--color-on-surface); /* Primary color */
     font-size: 1.5em;
     box-sizing:border-box;
     margin:0;
@@ -74,14 +74,14 @@ p{
 
 .footer-section p,
 .footer-section a {
-    color: var(--color-on-primary); /* Neutral color */
+    color: var(--color-on-surface); /* Neutral color */
     text-decoration: none;
     
 }
 
 .footer-section a:hover {
-    background-color:rgba(22,42,81,0.5);
-    color:var(--color-on-secondary-container);
+    background-color:rgba(84,171,175,0.5);
+    color:var(--color-on-primary-container);
 }
 
 .social-icons, .footer-copyright, .footer-links {
@@ -103,7 +103,7 @@ p{
 .social-icons > a {
     padding: 5px 10px;
     border-radius: 5px;
-    background-color:rgba(22,42,81,0.5);
+    background-color:rgba(84,171,175,0.5);
     color:var(--color-on-primary);
     transition: background 0.3s ease;
     
@@ -112,7 +112,7 @@ p{
 .footer-links > a {
 
     border-radius: 5px;
-        background-color:rgba(255,150,44,0.5);
+        background-color:rgba(84,171,175,0.5);
     color:var(--color-on-primary);
     transition: background 0.3s ease;
 }

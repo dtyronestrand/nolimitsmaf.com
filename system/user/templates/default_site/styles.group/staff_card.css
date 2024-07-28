@@ -8,6 +8,7 @@
     align-items:start;
     justify-content:center;
     height:min-content;
+    margin-left:20px;
 
 }
 
@@ -41,8 +42,8 @@ padding-left:55px;
   padding: 20px;
   background: linear-gradient(
     45deg,
-    rgba(255, 150, 44, 0.1),
-    rgba(255, 150, 44, 0.2)
+    rgba(255, 150, 44, 0.3),
+    rgba(255, 150, 44, 0.4)
   );
   backdrop-filter: blur(4px);
   box-shadow: 0 0 20px #000;
@@ -76,6 +77,7 @@ padding-left:55px;
   font-size: 22px;
   background:rgba(255,189,73,0.5);
   backdrop-filter:blur(4px);
+
   margin-right: 10px;
   color: var(--color-on-tertiary-container);
   transition: 0.4s all;
