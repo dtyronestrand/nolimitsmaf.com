@@ -1,0 +1,62 @@
+{layout="layouts/_wrapper"}
+<div class="locations-main">
+<div class="location-select">
+<label for="locations">Select a Location Below</label>
+<select id="locations" onchange="showContent()" name="locations">
+	<option value="">Select a Location</option>
+	<option value="main">Main</option>
+	<option value="reynolds">J. Sargeant Reynolds</option>
+	<option value="neighborhood">Neighborhood</option>
+</select>
+</div>
+<div id="main" class="content">
+<h1>Main Branch</h1>
+<p>Our main branch located in Beaverdam, Virginia</p>
+<h2>Pricing</h2>
+<table>
+<tr>
+<th>Number of Disciplines</th>
+<th>Per Month</th>
+</tr>
+<tr>
+<td>1</td>
+<td>$150</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$200</td>
+<tr>
+<td>All</td>
+<td>$300</td>
+</table>
+<p>Drop-ins, guests, and visitors welcome at $25 per class.</p>
+</div>
+<div id="reynolds" class="content">
+<h1>J. Sargeant Reynolds</h1>
+<p>Classes held weekly on the Parham Road Campus. Classes at this location are currently only open to those with an active affiliation with Reynolds (i.e. faculty, staff, students).</p>
+<h2>Price</h2>
+<p>Monthly <span class="price">$75</span></p>
+<p>Drop-ins <span class="price">$25</span></p>
+</div>
+<div id="neighborhood" class="content">
+<h1>Neighborhood Branches</h1>
+<p>Location is no limit. We can come to you. Contact us to establish a branch in your neighborhoow.</p>
+<h2>Price</h2>
+<p>Monthly <span class="price">$75</span></p>
+<p>Drop-ins <span class="price">$35</span></p>
+</div>
+</div>
+<script>
+        function showContent() {
+            const selectedValue = document.getElementById('locations').value;
+            const contents = document.querySelectorAll('.content');
+            
+            contents.forEach(content => {
+                if (content.id === selectedValue) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        }
+    </script>

@@ -1,0 +1,22 @@
+a:3:{s:4:"time";i:1722029769;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722029762;s:13:"template_data";s:470:"   .content {
+            display: none;
+        }
+        .active {
+            display: block;
+            /*background: rgba(0,0,0,0.7);
+            backdrop-filter:blur(7px);*/
+            color:var(--color-inverse-on-surface);
+            
+        }
+        
+       .location-select{
+       margin-top:10px;
+       height:2em;
+       z-index:10;
+       }
+       
+       .locations-main{
+       width:100%;
+       min-height:60vh;
+       padding-left: 20px;
+       }";}}

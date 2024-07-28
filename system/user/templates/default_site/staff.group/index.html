@@ -1,0 +1,9 @@
+{layout="layouts/_wrapper"}
+{exp:channel:entries channel="staff"}
+{staff_docs}
+<div class="staff-document">
+<h1>{staff_docs:document_name}</h1>
+{staff_docs:file wrap="link"}
+</div>
+{/staff_docs}
+{/exp:channel:entries}
