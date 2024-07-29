@@ -1,4 +1,4 @@
-a:3:{s:4:"time";i:1720377845;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1720377430;s:13:"template_data";s:1093:".about {
+a:3:{s:4:"time";i:1722191605;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722175008;s:13:"template_data";s:1718:".about {
 	
 	display:flex;
     width:100%;
@@ -8,28 +8,53 @@ a:3:{s:4:"time";i:1720377845;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:172
     align-items:start;
     justify-content:center;
     height:min-content;
+    margin-left:20px;
 
 }
 
+.contact{
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+width:max-content;
+margin:0 auto;
+margin-top:20px;
+padding: 20px;
+color:var(--color-on-primary);
+border-radius: 15px;
+background: linear-gradient(
+    45deg,
+    rgba(255, 150, 44, 0.5),
+    rgba(255, 150, 44, 0.6)
+  );
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px #000;
+  border-top: 2px solid rgba(144, 77, 0, 0.25);
+  border-left: 2px solid rgba(144, 77, 0, 0.2);
+}
+.contact-image{
+padding-top:90px;
+padding-left:55px;
+}
 .staff-card {
   width: 250px;
   height: auto;
   padding: 20px;
   background: linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.2)
+    rgba(255, 150, 44, 0.3),
+    rgba(255, 150, 44, 0.4)
   );
   backdrop-filter: blur(4px);
   box-shadow: 0 0 20px #000;
-  border-top: 2px solid rgba(255, 255, 255, 0.25);
-  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(144, 77, 0, 0.25);
+  border-left: 2px solid rgba(144, 77, 0, 0.2);
 }
 
 .staff-card img {
   width: 150px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid var(--color-primary);
 }
 
 .staff-card h2 {
@@ -44,15 +69,17 @@ a:3:{s:4:"time";i:1720377845;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:172
   font-size: 15px;
 }
 
-.staff-card button {
+.contact-submit{
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  padding:15px;
+  border-radius:10px;
+  border:4px solid var(--color-primary);
   font-size: 22px;
-  border-radius: 50%;
-  border: none;
+  background:rgba(255,189,73,0.5);
+  backdrop-filter:blur(4px);
+
   margin-right: 10px;
-  color: #fff;
+  color: var(--color-on-tertiary-container);
   transition: 0.4s all;
   cursor: pointer;
 }

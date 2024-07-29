@@ -16,24 +16,36 @@ font-family:"Protest Revolution";
 p {
 font-size:18pt;
 }
-html{
-height:100vh;
-}
+
 body{
-display:flex;
-flex-direction:column;
-  height:100%;
-  width: 100%;
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+overflow-y: scroll;
+overscroll-behavior:none;
  /* background: #ff0000;
   background: linear-gradient(
     to top,
     #ff0000,#fdcf58,#fdcf58
   ) center center fixed;*/
-background: rgb(238,43,10);
-background: linear-gradient(45deg, rgba(238,43,10,1) 0%, rgba(241,151,6,1) 35%, rgba(241,246,13,1) 100%) center center fixed;
-  
+/*background: rgb(238,43,10);
+background: linear-gradient(45deg, rgba(238,43,10,1) 0%, rgba(241,151,6,1) 35%, rgba(241,246,13,1) 100%) center center fixed;*/
+  background-image:url(https://nolimitsmaf.great-site.net/uploads/images/flames-1645399_1280.jpg);
   background-repeat:no-repeat;
   background-size:cover;
+  
+}
+
+.breadcrumbs{
+	color:var(--color-inverse-on-surface);
+    padding-left:30px;
+	a{
+    	text-decoration:none;
+        font-size:large;
+        color:var(--color-inverse-on-surface);
+    }
 }
 
 :root {
@@ -58,71 +70,55 @@ background: linear-gradient(45deg, rgba(238,43,10,1) 0%, rgba(241,151,6,1) 35%, 
     --transition: 250ms ease-out;
 
     /* Colors */
-  --color-primary: rgb(255 255 255);
-  --color-surface-tint: rgb(220 200 0);
-  --color-on-primary: rgb(55 49 0);
-  --color-primary-container: rgb(236 214 0);
-  --color-on-primary-container: rgb(36 32 0);
-  --color-secondary: rgb(255 204 154);
-  --color-on-secondary: rgb(51 27 0);
-  --color-secondary-container: rgb(247 149 0);
+ --color-primary: rgb(131 217 221);
+  --color-surface-tint: rgb(126 212 216);
+  --color-on-primary: rgb(0 26 27);
+  --color-primary-container: rgb(84 171 175);
+  --color-on-primary-container: rgb(0 0 0);
+  --color-secondary: rgb(255 222 170);
+  --color-on-secondary: rgb(58 38 0);
+  --color-secondary-container: rgb(239 173 33);
   --color-on-secondary-container: rgb(0 0 0);
-  --color-tertiary: rgb(255 186 175);
-  --color-on-tertiary: rgb(55 0 0);
-  --color-tertiary-container: rgb(255 85 64);
+  --color-tertiary: rgb(255 187 157);
+  --color-on-tertiary: rgb(45 12 0);
+  --color-tertiary-container: rgb(231 109 44);
   --color-on-tertiary-container: rgb(0 0 0);
   --color-error: rgb(255 186 177);
   --color-on-error: rgb(55 0 1);
   --color-error-container: rgb(255 84 73);
   --color-on-error-container: rgb(0 0 0);
-  --color-background: rgb(21 20 8);
-  --color-on-background: rgb(232 226 207);
-  --color-surface: rgb(18 19 22);
-  --color-on-surface: rgb(251 250 254);
-  --color-surface-variant: rgb(66 71 77);
-  --color-on-surface-variant: rgb(199 203 210);
-  --color-outline: rgb(159 163 170);
-  --color-outline-variant: rgb(127 131 138);
+  --color-background: rgb(16 20 20);
+  --color-on-background: rgb(224 227 227);
+  --color-surface: rgb(16 20 20);
+  --color-on-surface: rgb(248 251 251);
+  --color-surface-variant: rgb(62 73 73);
+  --color-on-surface-variant: rgb(194 205 205);
+  --color-outline: rgb(154 165 165);
+  --color-outline-variant: rgb(122 133 133);
   --color-shadow: rgb(0 0 0);
   --color-scrim: rgb(0 0 0);
-  --color-inverse-surface: rgb(226 226 230);
-  --color-inverse-on-surface: rgb(40 42 45);
-  --color-inverse-primary: rgb(81 73 0);
-  --color-primary-fixed: rgb(251 228 0);
-  --color-on-primary-fixed: rgb(20 17 0);
-  --color-primary-fixed-dim: rgb(220 200 0);
-  --color-on-primary-fixed-variant: rgb(61 55 0);
-  --color-secondary-fixed: rgb(255 220 189);
-  --color-on-secondary-fixed: rgb(30 13 0);
-  --color-secondary-fixed-dim: rgb(255 184 109);
-  --color-on-secondary-fixed-variant: rgb(81 46 0);
-  --color-tertiary-fixed: rgb(255 218 212);
-  --color-on-tertiary-fixed: rgb(45 0 0);
-  --color-tertiary-fixed-dim: rgb(255 180 168);
-  --color-on-tertiary-fixed-variant: rgb(116 1 0);
-  --color-surface-dim: rgb(18 19 22);
-  --color-surface-bright: rgb(56 57 60);
-  --color-surface-container-lowest: rgb(12 14 17);
-  --color-surface-container-low: rgb(26 28 31);
-  --color-surface-container: rgb(30 32 35);
-  --color-surface-container-high: rgb(40 42 45);
-  --color-surface-container-highest: rgb(51 53 56);
-  --md-extended-color-custom-color1-color: rgb(255 187 163);
-  --md-extended-color-custom-color1-on-color: rgb(47 10 0);
-  --md-extended-color-custom-color1-color-container: rgb(253 89 0);
-  --md-extended-color-custom-color1-on-color-container: rgb(0 0 0);
-  --md-extended-color-custom-color2-color: rgb(255 249 244);
-  --md-extended-color-custom-color2-on-color: rgb(60 47 0);
-  --md-extended-color-custom-color2-color-container: rgb(251 202 0);
-  --md-extended-color-custom-color2-on-color-container: rgb(35 26 0);
+  --color-inverse-surface: rgb(224 227 227);
+  --color-inverse-on-surface: rgb(38 43 43);
+  --color-inverse-primary: rgb(0 81 83);
+  --color-primary-fixed: rgb(155 241 245);
+  --color-on-primary-fixed: rgb(0 20 21);
+  --color-primary-fixed-dim: rgb(126 212 216);
+  --color-on-primary-fixed-variant: rgb(0 61 63);
+  --color-secondary-fixed: rgb(255 222 170);
+  --color-on-secondary-fixed: rgb(26 15 0);
+  --color-secondary-fixed-dim: rgb(255 186 48);
+  --color-on-secondary-fixed-variant: rgb(74 50 0);
+  --color-tertiary-fixed: rgb(255 219 204);
+  --color-on-tertiary-fixed: rgb(36 8 0);
+  --color-tertiary-fixed-dim: rgb(255 182 149);
+  --color-on-tertiary-fixed-variant: rgb(96 35 0);
+  --color-surface-dim: rgb(16 20 20);
+  --color-surface-bright: rgb(54 58 58);
+  --color-surface-container-lowest: rgb(11 15 15);
+  --color-surface-container-low: rgb(24 28 28);
+  --color-surface-container: rgb(28 32 32);
+  --color-surface-container-high: rgb(38 43 43);
+  --color-surface-container-highest: rgb(49 54 54);
+}
 
   
-  }
-
-  @media screen and (max-width: 1024px) {
-    img.b {
-      left: 50%;
-      margin-left: -512px;
-      
-    }
-  }

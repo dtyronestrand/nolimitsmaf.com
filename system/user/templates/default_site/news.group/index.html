@@ -1,0 +1,21 @@
+{layout="layouts/_wrapper"}
+<div class="news-container">
+{exp:channel:entries channel="news_item" limit="5" dynamic="no"}
+{news_item}
+{if count == 1}
+<div class="news-featured-item">
+{news_item:event_image wrap="image"}
+<div class="news-featured-info">
+<h1 class="featured-info-header">{news_item:event_name}</h1>
+<h2><em>{news_item:event_date format="%F %d %Y"}</em></h2>
+<p>{news_item:event_description}</p></div></div>{/if}
+{if count > 1}<div class="news-grid">
+<div class="news-item">{news_item:event_image wrap="image"}
+<div class="news-content"><h1>{news_item:event_name}</h1>
+<p>{news_item:event_description}</p>
+<span class="news-item-date">{news_item:event_date format="%F %d %Y"}</span>
+
+</div></div></div>{/if}
+{/news_item}
+{/exp:channel:entries}
+</div>

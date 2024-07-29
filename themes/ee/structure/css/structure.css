@@ -1593,7 +1593,7 @@ body[data-ee-version^="7."] #structure-ui .page-handle a:before
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Font Awesome 5 Free';
+    font-family: 'Font Awesome 5 Free', serif;
     font-weight: 900;
     color: var(--ee-text-secondary);
     text-indent: 0;

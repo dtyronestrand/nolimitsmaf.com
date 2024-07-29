@@ -1,5 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+$config['tls_crypto_method'] = '33';
 $config['index_page'] = '';
 $config['site_license_key'] = '';
 $config['save_tmpl_files'] = 'y';

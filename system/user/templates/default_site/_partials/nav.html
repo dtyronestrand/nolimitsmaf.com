@@ -1,6 +1,6 @@
 		
 		<nav><a class="nav-logo" href="{path="home/index"}">No Limits Martial Arts and Fittness</a>
-		<span>{exp:structure:nav start_from="/home/index.html" show_depth="4"}</span><button popovertarget="login" class="nav-signin">Sign In</button>
+		<span>{exp:structure:nav start_from="/home/index.html" show_depth="4"}</span>{if logged_out && current_path=="/"} <button popovertarget="login" class="nav-signin">Sign In</button>{if:elseif logged_in}<div class="logged-in"><p>{logged_in_username}<br/><a href="{path='logout'}">Logout</a></p>{if:else}<button class="nav-signin"><a href="{path='home/sign-in-sign-up'}">Sign Up/Sign In</a></button>{/if}
 
 </div>
 {sign_in}

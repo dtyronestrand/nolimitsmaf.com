@@ -1,1 +1,1 @@
-a:3:{s:4:"time";i:1721321078;s:3:"ttl";i:60;s:4:"data";a:3:{s:9:"field_ids";a:2:{i:0;s:11:"field_id_13";i:1;s:11:"field_id_14";}s:9:"entry_ids";a:2:{s:3:"all";a:2:{i:0;i:15;i:1;i:18;}i:1;a:2:{i:0;i:15;i:1;i:18;}}s:10:"reindexing";b:0;}}
+a:3:{s:4:"time";i:1721594015;s:3:"ttl";i:60;s:4:"data";a:3:{s:9:"field_ids";a:4:{i:0;s:11:"field_id_13";i:1;s:11:"field_id_14";i:2;s:11:"field_id_22";i:3;s:11:"field_id_24";}s:9:"entry_ids";a:2:{s:3:"all";a:2:{i:0;i:15;i:1;i:18;}i:1;a:2:{i:0;i:15;i:1;i:18;}}s:10:"reindexing";b:0;}}

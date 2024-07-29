@@ -1,4 +1,4 @@
-a:3:{s:4:"time";i:1720931413;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1720922185;s:13:"template_data";s:1498:".homepage_logo {
+a:3:{s:4:"time";i:1722191605;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722177007;s:13:"template_data";s:1567:".homepage_logo {
 display:block;
 margin-top:-20px;
 margin-bottom:5px;
@@ -14,7 +14,7 @@ justify-self:center;
 
 
 .call-to-action{
-height:85vh;
+height:auto;
 width:100%;
 position:relative;
 box-sizing:border-box;
@@ -32,7 +32,7 @@ h1 {
 	padding:0;
 	font-size: 4em;
 	font-weight:bolder;
-	color:var(--color-on-secondary);
+	color:var(--color-on-surface);
 }
 }
 
@@ -54,26 +54,28 @@ margin-inline:auto;
 
 .join-button {
 	transition: transform 0.3s ease;
-	background: rgba( 255, 255, 0, 0.2);
+	background:rgba(239,173, 33, 0.5);
 	box-shadow: 0 4px 30px 0 rgba( 31, 38, 135, 0.425 );
 	backdrop-filter: blur( 3.1px );
 	-webkit-backdrop-filter: blur( 5px );
 	border-radius: 10px;
-	border: 1px solid rgba( 255, 255, 0, 1 );
+	border: 1px solid rgba( 144, 77, 0, 1 );
 	height:75%;						
 	padding: 16px 40px;
 	padding-bottom:5px;
 	font-size: 56px;	
 	cursor: pointer;
 	font-family: "Protest Revolution";
+	color:var(--color-on-primary);
 
 	
 }
 .join-button:hover {
-	background: rgba( 175, 140, 61, 0.4 );
+	background: rgba(255, 222, 170,0.4);
 	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.7 );
 	backdrop-filter: blur( 4px );
 	transform: scale(1.2);
+	color:var(--color-on-secondary-container);
 }
 
 @keyframes logoentrance {

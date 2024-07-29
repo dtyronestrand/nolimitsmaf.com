@@ -1,18 +1,24 @@
 nav {
+
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-between;
 	align-content:space-between;
 	font-family:"Protest Revolution";
 	font-size: 1.5em;
-	 background:linear-gradient(45deg, rgba(237, 198, 112, 0.6), rgba(237, 198,112, 0.4));
-backdrop-filter: blur(4px);
+	 background:linear-gradient(45deg, rgba(239,173,33, 0.4), rgba(239,173, 33, 0.2));
+backdrop-filter: blur(3px);
 box-shadow: 0 0 20px #000;
     border-radius: 15px;
-    border: 2px solid rgba(93, 68, 0, 0.5);
+    border: 2px solid rgba(144, 77, 0, 0.5);
 		/*background: rgba( 255, 255, 0, 0.2);*/
-	color: var(--color-on-secondary-container);
-	margin:0;
+	color: var(--color-on-surface);
+	margin:50px 0;
+	
+	p {
+	text-transform:capitalize;
+	margin-right:15px;
+	}
 	
 }
 
@@ -20,7 +26,7 @@ box-shadow: 0 0 20px #000;
 #nav-sub {
 	display:flex;
 	padding: 15px 30px;
-	color:var(--color-on-primary);
+	color:var(--color-on-surface);
 	text-align: center;
 	border-radius: 20px;
 	text-decoration: none;
@@ -46,7 +52,7 @@ font-size:larger;
 padding: 15px 30px;
 justify-self:end;
 align-self:baseline;
-	color: var(--color-on-primary);
+	color: var(--color-on-surface);
 	border-radius: 20px;
 	text-decoration: none;
 	transition: background 0.2s ease-out;
@@ -57,13 +63,80 @@ align-self:baseline;
   font-style: inherit;
   font-weight: inherit;
   line-height: inherit;
+  margin-right:15px;
+  text-transform:capitalize;
+}
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	
+	}
+	
+nav ul li {
+	display:inline-block;
+	
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
 }
 
+nav a:hover { 
+	background-color:var(--color-primary); 
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+}
+	
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	 background:linear-gradient(45deg, rgba(239,173,33, 0.4), rgba(239,173, 33, 0.2));
+backdrop-filter: blur(3px);
+box-shadow: 0 0 20px #000;
+
+}
+nav ul ul li:first-of-type{
+margin-top:20px;
+}
+
+nav ul ul li:last-of-type{
+margin-bottom:20px;
+}
+/* Second, Third and more Tiers	*/
+nav ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
 
 nav a{
 	
 	padding: 15px 30px;
-	color: var(--color-on-primary);
+	color: var(--color-on-surface);
 	border-radius: 20px;
 	text-decoration: none;
 	transition: background 0.2s ease-out;
@@ -71,7 +144,7 @@ nav a{
 }
 
 nav a:hover, .nav-signin:hover {
-	background:rgba(255, 0, 0, 0.5);;
-	color:var(--color-primary);
+	background:rgba(22,42,81, 0.5);
+	color:var(--color-primary-container);
 }
 
