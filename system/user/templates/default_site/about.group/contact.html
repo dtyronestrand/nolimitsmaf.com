@@ -1,0 +1,29 @@
+{layout="layouts/_wrapper"}
+<div class="contact">
+<section class="contact-form">
+{exp:email:contact_form user_recipients="no" recipients="admin@nolimitsmaf.com" charset="utf-8"}
+    <h2>Contact No Limits</h2>
+    <p>
+        <label for="from">Your Email:</label><br />
+        <input type="text" id="from" name="from" size="40" maxlength="35" value="{member_email}" />
+    </p>
+    <p>
+        <label for="subject">Subject:</label><br />
+        <input type="text" id="subject" name="subject" size="40" value="Contact Form" />
+    </p>
+    <p>
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="18" cols="40">
+            Email from: {member_name}
+            Sent at:  {current_time format="%Y %m %d"}
+        </textarea>
+    </p>
+    <p>
+        <input name="submit" class="contact-submit" type='submit' value='Submit Form' />
+    </p>
+{/exp:email:contact_form}
+</section>
+<section class="contact-image">
+<img style="float:right;" src="https://nolimitsmaf.great-site.net/uploads/images/Logo/NLMAF_LOGO_2shues_smallcropped.png" alt="No Limits Logo"/>
+</section>
+</div>

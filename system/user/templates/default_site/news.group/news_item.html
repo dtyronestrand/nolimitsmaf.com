@@ -1,0 +1,14 @@
+{layout="layouts/_wrapper"}
+{exp:channel:enteries channel="news_item"}
+{news_item}
+<div class="news-item-main">
+<section class="news-item-heading">
+<h1>{news_item:event_name}</h1>
+<p>{news_item:event_date}<p>
+</section>
+<article class="news-item-content">
+<p>{news_item:event_description}</p>
+</article>
+</div>
+{/news_item}
+{/exp:channel:entries}
