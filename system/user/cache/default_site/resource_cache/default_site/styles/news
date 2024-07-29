@@ -1,4 +1,4 @@
-a:3:{s:4:"time";i:1722191606;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722175007;s:13:"template_data";s:2596:".news-container {
+a:3:{s:4:"time";i:1722051197;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722051193;s:13:"template_data";s:2709:".news-container {
 display:flex;
 min-height:60vh;
 width:100vw;
@@ -13,14 +13,17 @@ flex-wrap:wrap;
  display:flex;
  flex-direction:row;
  margin:0 auto;
+ height:auto;
  width:60%;
- background:linear-gradient(45deg, rgba(255, 0, 0, 0.6), rgba(255, 0,0, 0.4));
+ background:linear-gradient(45deg, rgba(255, 150, 44, 0.6), rgba(255, 150,44, 0.4));
 backdrop-filter: blur(6px);
+box-shadow: 0 0 20px #000;
 border-top: 2px solid rgba(144, 77, 0, 0.25);
 border-left: 2px solid rgba(144, 77, 0, 0.2);
   border-radius:20px;
   color: var(--color-inverse-on-surface);
   padding: 20px;
+  width: 60%;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height:max-content;
@@ -101,8 +104,9 @@ border-left: 2px solid rgba(144, 77, 0, 0.2);
 
 .news-item {
   width: 32%;
-  background: var(--color-primary-container);
-  color:var(--color-on-primary-container);
+  background: linear-gradient(30deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+  backdrop-fiter:blur(2px);
+  color:var(--color-inverse-on-surface);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

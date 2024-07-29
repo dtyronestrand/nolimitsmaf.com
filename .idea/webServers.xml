@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="ee697516-0627-4864-85cc-46552453bc85" name="nolimitsmaf.com" url="http://ftpupload.net">
+      <webServer id="0ef16403-409b-4789-98da-78fe4c7d71eb" name="infinity" url="http://ftpupload.net">
         <fileTransfer host="ftpupload.net" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

@@ -15,11 +15,6 @@ box-shadow: 0 0 20px #000;
 	color: var(--color-on-surface);
 	margin:50px 0;
 	
-	p {
-	text-transform:capitalize;
-	margin-right:15px;
-	}
-	
 }
 
 
@@ -63,8 +58,6 @@ align-self:baseline;
   font-style: inherit;
   font-weight: inherit;
   line-height: inherit;
-  margin-right:15px;
-  text-transform:capitalize;
 }
 nav ul {
 	padding: 0;
@@ -89,7 +82,7 @@ nav a {
 }
 
 nav a:hover { 
-	background-color:var(--color-primary); 
+	background-color:var(--color-tertiary); 
 }
 
 /* Hide Dropdowns by Default */
@@ -117,10 +110,6 @@ box-shadow: 0 0 20px #000;
 nav ul ul li:first-of-type{
 margin-top:20px;
 }
-
-nav ul ul li:last-of-type{
-margin-bottom:20px;
-}
 /* Second, Third and more Tiers	*/
 nav ul ul ul li {
 	position: relative;
@@ -145,6 +134,6 @@ nav a{
 
 nav a:hover, .nav-signin:hover {
 	background:rgba(22,42,81, 0.5);
-	color:var(--color-primary-container);
+	color:var(--color-tertiary-container);
 }
 

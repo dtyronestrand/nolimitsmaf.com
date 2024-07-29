@@ -1,4 +1,4 @@
-a:3:{s:4:"time";i:1722191605;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722174569;s:13:"template_data";s:904:".login-form {
+a:3:{s:4:"time";i:1721445496;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1721445488;s:13:"template_data";s:939:".login-form {
 width:15vw;
 padding:20px;
 background:linear-gradient(45deg, rgba(255, 150, 44, 0.6), rgba(255, 150,44, 0.4));
@@ -31,7 +31,7 @@ width: 5em;
 height:2em;
 font-size: 22px; 
 border-radius:15px;
-
+border: none;
 margin-right: 10px;
 margin-top:10px;
 color: var(--color-on-secondary-container);
@@ -41,5 +41,6 @@ background: rgba( 22, 42, 81, 0.2);
 	box-shadow: 0 4px 30px 0 rgba( 31, 38, 135, 0.425 );
 	backdrop-filter: blur( 3.1px );
 	-webkit-backdrop-filter: blur( 5px );
+	border-radius: 10px;
 	border: 1px solid rgba( 0, 8, 32, 1 );
 }";}}

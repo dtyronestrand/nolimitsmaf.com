@@ -10,26 +10,26 @@ border-left: 2px solid rgba(144, 77, 0, 0.2);
 }
 
 .registration-form h4 {
-color: var(--color-on-surface);
+color: var(--color-on-primary);
 font-weight:bold;
 font-size:25px;
 }
 
 .registration-form p {
-color: var(--color-on-surface);
+color: var(--color-on-primary);
 font-size: 15px;
 border: 2px solid rgba(144, 77, 0, 0.02);
 }
 
 .registration-btn {
 display: inline-block;
-width: 6em;
+width: 5em;
 height:2em;
 font-size: 22px; 
 border-radius:15px;
 margin-right: 10px;
 margin-top:10px;
-color: var(--color-on-surface);
+color: var(--color-on-secondary-container);
 transition: 0.4s all;
 cursor: pointer;
 background: rgba( 22, 42, 81, 0.2);
