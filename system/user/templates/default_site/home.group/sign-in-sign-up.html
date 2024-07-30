@@ -1,73 +1,60 @@
 {layout="layouts/_wrapper"}
-<div class="sign-in-up-all">
-<div class="sign-in-up-container">
-    <div class="welcome">
-        <div class="mainbox">
-            <div class="signup nodisplay">
-                <h1>Register</h1>
-                {exp:member:registration_form return="{path='home/index'}"}
-                <!-- heading -->
-                <input class="sign-in-up-input" type="text" name="first_name" id="first_name" value="{if first_name}{first_name}{/if}" placeholder="First Name*">
-                <input class="sign-in-up-input" type="text" name="last_name" id="last_name" value="{if last_name}{last_name}{/if}" placeholder="Last Name*">
-                <p>Choose a Username that will be unique (i.e. jdoe8675309)</p>
-                <input class="sign-in-up-input" type="text" name="username" id="usernamesu" value="{if username}{username}{/if}" placeholder="User Name*">
-                <p>Choose a Display Name that you want other members to see (i.e. John)</p>
-                <input class="sign-in-up-input" type="text" name="screenname" id="screenname" value="{if screenname}{screenname}{/if}" placeholder="Display Name*">
-                <input class="sign-in-up-input" type="email" placeholder="Email*">
-                <input class="sign-in-up-input" type="password" placeholder="Password*">
-                <input class="sign-in-up-input" type="password" placeholder="Confirm Password*">
-                <label><input class="sign-in-up-input" type="checkbox" name="accept_terms" value="y">I accept the Terms of Service</label>
-                <input class="sign-in-up-button" type="submit" value="Register" />
-                <!-- input fields end -->
-                {/exp:member:registration_form}
-            </div>
-            <div class="signin">
-                <h1>Sign In</h1>
-                {exp:member:login_form}
-                <!-- heading -->
+<div class="container" id="container">
 
-
-                <!-- input fields start -->
-                <input class="sign-in-up-input" type="username" name="username" id="usernamesi" value="{if username}{username}{/if}" placeholder="Username">
-                <input class="sign-in-up-input" type="password" name="password" id="password" value="{if password}{password{/if}" placeholder="Password">
-                <span>Forgot your <span class="forgot">password?</span></span>
-                <button class="sign-in-up-button bb">Login</button>
-                <!-- input fields end -->
-                {/exp:member:login_form}
-            </div>
-        </div>
-        <div class="leftbox">
-            <h2 class="title"><span>No Limits</span><br>Martial Arts and Fitness</h2>
-            <img class="flower smaller" src="https://nolimitsmaf.great-site.net/uploads/images/Logo/NLMAF_LOGO_2shues_smallcropped.png" alt="No Limits Logo" border="0">
-            <p class="account">Have an account?</p>
-            <button class="button bb" id="signin">Login</button>
-        </div>
-        <div class="rightbox">
-            <h2 class="title"><span>No Limits</span>&<br>Martial Arts and Fitness</h2>
-
-            <img class="flower" src="https://nolimitsmaf.great-site.net/uploads/images/Logo/NLMAF_LOGO_2shues_smallcropped.png"/>
-            <p class="account">Don't have an account?</p>
-            <button class="button bb" id="signup">Sign Up</button>
-        </div>
+    <!-- sign Up form section start-->
+    <div class="form sign_up">
+    	<p>* Required</p>
+      {exp:member:registration_form return="{path='home/index'}"}
+        <!-- heading -->
+        <fieldset>
+        <h1>Create An Account</h1>
+    	<input type="text" name="first_name" id="first_name" value="{if first_name}{first_name}{/if}" placeholder="First Name*">
+		<input type="text" name="last_name" id="last_name" value="{if last_name}{last_name}{/if}" placeholder="Last Name*">
+		<p>Choose a User Name that will be unique (i.e jdoe8675309)</p>
+        <input type="text" name="username" id="username" value="{if username}{username}{/if}" placeholder="User Name*">
+		<p>Choose a Display Name that you want other members to see (i.e. John)</p>
+		<input type="text" name="screenname" id="screenname" value="{if screenname}{screenname}{/if}" placeholder="Display Name*">
+        <input type="email" placeholder="Email*">
+        <input type="password" placeholder="Password*">
+		<input type="password" placeholder="Confirm Password*">
+		<label><input type="checkbox" name="accept_terms" value="y">I accept the Terms of Service</label>
+        <input type="submit" value="Register" calss="sign-up-bttn"/>
+        </fieldset>
+        <!-- input fields end -->
+      {/exp:member:registration_form}
     </div>
-</div>
-</div>
-<script>
-    const signUpButton = document.getElementById("signup");
-    const signInButton = document.getElementById("signin");
-    let mainBox = document.getElementsByClassName("mainbox")[0];
-    let signUp = document.getElementsByClassName("signup")[0];
-    let signIn = document.getElementsByClassName("signin")[0];
+    <!-- sign Up form section end-->
 
-    signUpButton.addEventListener("click", () => {
-        mainBox.style.transform = 'translate(80%)';
-        signIn.classList.add("nodisplay");
-        signUp.classList.remove("nodisplay");
-    });
+    <!-- sign in form section start-->
+    <div class="form sign_in">
+      {exp:member:login_form}
+        <!-- heading -->
+        <h1>Login In</h1>
+      
+        <!-- input fields start -->
+        <input type="email" name="email" id="email" value="{if email}{email}{/if}" placeholder="Email">
+        <input type="password" name="password" id="password" value="{if password}{password{/if}" placeholder="Password">
+        <span>Forgot your <span class="forgot">password?</span></span>
+        <button>Login</button>
+        <!-- input fields end -->
+      {/exp:member:login_form}
+    </div>
+    <!-- sign in form section end-->
 
-    signInButton.addEventListener("click", () => {
-        mainBox.style.transform = 'translateX(0%)';
-        signUp.classList.add("nodisplay");
-        signIn.classList.remove("nodisplay");
-    });</script>
-
+    <!-- overlay section start-->
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-pannel overlay-left">
+          <h1>Already have an account</h1>
+          <p>Please Login</p>
+          <button id="signIn" class="overBtn">SignIn</button>
+        </div>
+        <div class="overlay-pannel overlay-right">
+          <h1>Create Account</h1>
+          <p>Start Your Journey with Us</p>
+          <button id="signUp" class="overBtn">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <!-- overlay section start-->
+  </div>
