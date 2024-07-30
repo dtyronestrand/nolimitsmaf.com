@@ -1,29 +1,18 @@
-{exp:member:registration_form return="member/registration/success"}
 <div popover="auto" class="registration-form" id="registration">
-    <fieldset class="nolimits-registration">
-        <h4>Create Account</h4>
-        <p><label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" value="{if first-name}{first-name}{/if}"/><label
-                    for="last-name">Last Name</label><input type="text" id="last-name" name="last-name"
-                                                            value="{if last-name}{last-name}{/if}"/>
-
-            <label for="email">Email</label><br/>
-            <input type="text" name="email" id="email" value="{if email}{email}{/if}"/>
-        </p>
-
-        <p>
-            <label for="username">Username</label><br/>
-            <input type="text" name="username" id="username" value="{if username}{username}{/if}"/>
-        </p>
-        <p>
-        <label for="password">Password</label><br/>
-        <input type="password" name="password" id="password" value="{if password}{password}{/if}"/>
-        </p>
-        <p>
-            <label for="password_confirm">Confirm Password</label><br/>
-            <input type="password" id="password_confirm" name="password_confirm" value=""/>
-        </p>
-    </fieldset>
-    <input type="submit" value="Register" class="registration-btn"/>
+    <h1>Register</h1>
+    {exp:member:registration_form return="{path='home/index'}"}
+    <!-- heading -->
+    <input class="sign-in-up-input" type="text" name="first_name" id="first_name" value="{if first_name}{first_name}{/if}" placeholder="First Name*">
+    <input class="sign-in-up-input" type="text" name="last_name" id="last_name" value="{if last_name}{last_name}{/if}" placeholder="Last Name*">
+    <p>Choose a Username that will be unique (i.e. jdoe8675309)</p>
+    <input class="sign-in-up-input" type="text" name="username" id="username" value="{if username}{username}{/if}" placeholder="User Name*">
+    <p>Choose a Display Name that you want other members to see (i.e. John)</p>
+    <input class="sign-in-up-input" type="text" name="screenname" id="screenname" value="{if screenname}{screenname}{/if}" placeholder="Display Name*">
+    <input class="sign-in-up-input" type="email" placeholder="Email*">
+    <input class="sign-in-up-input" type="password" placeholder="Password*">
+    <input class="sign-in-up-input" type="password" placeholder="Confirm Password*">
+    <label><input class="sign-in-up-input" type="checkbox" name="accept_terms" value="y">I accept the Terms of Service</label>
+    <input class="sign-in-up-button" type="submit" value="Register" />
+    <!-- input fields end -->
+    {/exp:member:registration_form}
 </div>
-{/exp:member:registration_form}

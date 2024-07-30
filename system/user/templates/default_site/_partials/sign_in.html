@@ -1,12 +1,16 @@
-{exp:member:login_form return="member/login/success"}
+{exp:member:login_form return="home/index"}
 <div popover="auto" class="login-form" id="login">
-    <div class="nolimits-login">	
-        <h2>Sign In</h2>
-           <p> <label for="username">Username</label><br/>
-            <input type="text" name="username" id="username" value="{if username}{username}{/if}"/></p><p>
-           <label for="password">Password</label><br/>
-        <input type="password" name="password" id="password" value="{if password}{password}{/if}"/></p>
-        <button class="login-btn"  type="submit" value="Login"class="login-btn">Sign In</button>
-</div>
+    <h1>Sign In</h1>
+    {exp:member:login_form}
+    <!-- heading -->
+
+
+    <!-- input fields start -->
+    <input class="sign-in-up-input" type="text" name="username" id="username" value="{if username}{username}{/if}" placeholder="Username">
+    <input class="sign-in-up-input" type="password" name="password" id="password" value="{if password}{password{/if}" placeholder="Password">
+    <span>Forgot your <span class="forgot">password?</span></span>
+    <button class="sign-in-up-button bb">Login</button>
+    <!-- input fields end -->
+    {/exp:member:login_form}
 {/exp:member:login_form}
 </div>

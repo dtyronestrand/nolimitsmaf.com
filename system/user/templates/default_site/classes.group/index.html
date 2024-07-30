@@ -1,16 +1,22 @@
 {layout="layouts/_wrapper"}
 <div class="classes-main">
-<h1>Classess With No Limits</h1>
-<p>{page_content}</p>
-<div class="cards">
+<h1>Classes With No Limits</h1>
 {exp:channel:entries channel="class_details" dynamic="no"}
 {class_info}
- <a href="{page_url}"> <div class="card">
-    <h2 class="card-title">{class_info:class_name}</h2>
-    <img src="{class_info:file}" alt="{class_info:alt-txt}">
-    <p class="card-desc">{class_info:description}</p>
-  </div></a>
+<figure class="class-details-figure">
+  <div class="class-details-image">
+   {class_info:file wrap="image"}
+  </div>
+  <figcaption>
+    <h3>{class_info:class_name}</h3>
+    <p>{class_info:description}</p>
+    <div class="price">
+      
+    </div>
+    <a href="{page_url}" class="learn-more">Learn More</a>
+  </figcaption>
+</figure>
 {/class_info}
 {/exp:channel:entries}
 </div>
-</div>
+
