@@ -1,0 +1,11 @@
+a:3:{s:4:"time";i:1722286892;s:3:"ttl";i:0;s:4:"data";a:2:{s:9:"edit_date";i:1722286746;s:13:"template_data";s:370:"const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});";}}
