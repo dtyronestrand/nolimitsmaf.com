@@ -11,7 +11,7 @@
   font-style: normal;
 }
 h1, h2, h3, h4, h5, h6{
-font-family:"Protest Revolution";
+    font-family: "Protest Revolution", serif;
 }
 p {
 font-size:18pt;
@@ -20,8 +20,8 @@ font-size:18pt;
 body{
 width: 100%;
 height: 100%;
-margin: 0px;
-padding: 0px;
+margin: 0;
+padding: 0;
 overflow-x: hidden;
 overflow-y: scroll;
 overscroll-behavior:none;
@@ -70,55 +70,56 @@ background: linear-gradient(45deg, rgba(238,43,10,1) 0%, rgba(241,151,6,1) 35%, 
     --transition: 250ms ease-out;
 
     /* Colors */
- --color-primary: rgb(131 217 221);
-  --color-surface-tint: rgb(126 212 216);
-  --color-on-primary: rgb(0 26 27);
-  --color-primary-container: rgb(84 171 175);
-  --color-on-primary-container: rgb(0 0 0);
-  --color-secondary: rgb(255 222 170);
-  --color-on-secondary: rgb(58 38 0);
-  --color-secondary-container: rgb(239 173 33);
-  --color-on-secondary-container: rgb(0 0 0);
-  --color-tertiary: rgb(255 187 157);
-  --color-on-tertiary: rgb(45 12 0);
-  --color-tertiary-container: rgb(231 109 44);
-  --color-on-tertiary-container: rgb(0 0 0);
-  --color-error: rgb(255 186 177);
-  --color-on-error: rgb(55 0 1);
-  --color-error-container: rgb(255 84 73);
-  --color-on-error-container: rgb(0 0 0);
-  --color-background: rgb(16 20 20);
-  --color-on-background: rgb(224 227 227);
-  --color-surface: rgb(16 20 20);
-  --color-on-surface: rgb(248 251 251);
-  --color-surface-variant: rgb(62 73 73);
-  --color-on-surface-variant: rgb(194 205 205);
-  --color-outline: rgb(154 165 165);
-  --color-outline-variant: rgb(122 133 133);
-  --color-shadow: rgb(0 0 0);
-  --color-scrim: rgb(0 0 0);
-  --color-inverse-surface: rgb(224 227 227);
-  --color-inverse-on-surface: rgb(38 43 43);
-  --color-inverse-primary: rgb(0 81 83);
-  --color-primary-fixed: rgb(155 241 245);
-  --color-on-primary-fixed: rgb(0 20 21);
-  --color-primary-fixed-dim: rgb(126 212 216);
-  --color-on-primary-fixed-variant: rgb(0 61 63);
-  --color-secondary-fixed: rgb(255 222 170);
-  --color-on-secondary-fixed: rgb(26 15 0);
-  --color-secondary-fixed-dim: rgb(255 186 48);
-  --color-on-secondary-fixed-variant: rgb(74 50 0);
-  --color-tertiary-fixed: rgb(255 219 204);
-  --color-on-tertiary-fixed: rgb(36 8 0);
-  --color-tertiary-fixed-dim: rgb(255 182 149);
-  --color-on-tertiary-fixed-variant: rgb(96 35 0);
-  --color-surface-dim: rgb(16 20 20);
-  --color-surface-bright: rgb(54 58 58);
-  --color-surface-container-lowest: rgb(11 15 15);
-  --color-surface-container-low: rgb(24 28 28);
-  --color-surface-container: rgb(28 32 32);
-  --color-surface-container-high: rgb(38 43 43);
-  --color-surface-container-highest: rgb(49 54 54);
+    --color-primary: rgb(255 181 155);
+    --color-surface-tint: rgb(255 181 155);
+    --color-on-primary: rgb(92 26 0);
+    --color-primary-container: rgb(207 69 0);
+    --color-on-primary-container: rgb(255 255 255);
+    --color-secondary: rgb(255 255 255);
+    --color-on-secondary: rgb(50 50 0);
+    --color-secondary-container: rgb(219 219 0);
+    --color-on-secondary-container: rgb(66 66 0);
+    --color-tertiary: rgb(190 194 255);
+    --color-on-tertiary: rgb(0 1 172);
+    --color-tertiary-container: rgb(0 0 230);
+    --color-on-tertiary-container: rgb(215 216 255);
+    --color-error: rgb(255 180 168);
+    --color-on-error: rgb(105 0 0);
+    --color-error-container: rgb(224 0 0);
+    --color-on-error-container: rgb(255 255 255);
+    --color-background: rgb(30 16 11);
+    --color-on-background: rgb(249 221 212);
+    --color-surface: rgb(19 19 20);
+    --color-on-surface: rgb(228 226 226);
+    --color-surface-variant: rgb(75 70 62);
+    --color-on-surface-variant: rgb(205 197 187);
+    --color-outline: rgb(150 144 134);
+    --color-outline-variant: rgb(75 70 62);
+    --color-shadow: rgb(0 0 0);
+    --color-scrim: rgb(0 0 0);
+    --color-inverse-surface: rgb(228 226 226);
+    --color-inverse-on-surface: rgb(48 48 49);
+    --color-inverse-primary: rgb(170 55 0);
+    --color-primary-fixed: rgb(255 219 207);
+    --color-on-primary-fixed: rgb(56 13 0);
+    --color-primary-fixed-dim: rgb(255 181 155);
+    --color-on-primary-fixed-variant: rgb(129 40 0);
+    --color-secondary-fixed: rgb(234 234 0);
+    --color-on-secondary-fixed: rgb(29 29 0);
+    --color-secondary-fixed-dim: rgb(205 205 0);
+    --color-on-secondary-fixed-variant: rgb(73 73 0);
+    --color-tertiary-fixed: rgb(224 224 255);
+    --color-on-tertiary-fixed: rgb(0 0 110);
+    --color-tertiary-fixed-dim: rgb(190 194 255);
+    --color-on-tertiary-fixed-variant: rgb(0 0 239);
+    --color-surface-dim: rgb(19 19 20);
+    --color-surface-bright: rgb(57 57 58);
+    --color-surface-container-lowest: rgb(13 14 15);
+    --color-surface-container-low: rgb(27 28 28);
+    --color-surface-container: rgb(31 32 32);
+    --color-surface-container-high: rgb(41 42 43);
+    --color-surface-container-highest: rgb(52 53 53);
 }
+
 
   
