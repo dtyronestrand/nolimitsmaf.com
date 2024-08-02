@@ -87,17 +87,17 @@
 .class-details-figure .learn-more {
   display: inline-block;
   width: auto;
-  border: 2px solid #20638f;
+  border: 2px solid var(--color-secondary-container);
   padding: 0.4em 0.6em;
-  color: var(--color-primary);
+  color: var(--color-on-surface);
   text-decoration: none;
   font-weight: 800;
   font-size: 0.9em;
   text-transform: uppercase;
 }
 .class-details-figure .learn-more:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-on-secondary);
+  background-color: var(--color-tertiary-container);
+  color: var(--color-on-tertiary-container);
 }
 .class-details-figure .price {
   position: absolute;

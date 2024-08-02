@@ -1,10 +1,11 @@
 {layout="layouts/_wrapper"}
 <div class="news-container">
     <div class="cards-main">
+    <ul class="cards">
 {exp:channel:entries channel="news_item" limit="5" dynamic="no"}
 {news_item}
 
-        <ul class="cards">
+        
             <li class="cards_item">
                 <div class="card truncated">
                     <div class="card_image"><img src="{news_item:event_image wrap=link}" alt="{news_item:alt_text}"/></div>
@@ -23,9 +24,10 @@
                 </div>
             </li>
 
-        </ul>
+        
 {/news_item}
 {/exp:channel:entries}
+</ul>
         </div>
 </div>
 <script>

@@ -1,9 +1,14 @@
 {layout="layouts/_wrapper"}
-{exp:channel:entries channel="staff"}
-{staff_docs}
+<div class="staff-docs-wrapper">
+{exp:channel:entries channel="staff_docs" dynamic="no"}
+
+{staff_doc_upload}
 <div class="staff-document">
-<h1>{staff_docs:document_name}</h1>
-{staff_docs:file wrap="link"}
+<h1 class="staff-doc-name">{staff_doc_upload:name}</h1>
+<p class="staff-doc-description">{staff_doc_upload:description}</p>
+<object class="pdf" data="{staff_doc_upload:file}" width="800" height="500"></object>
 </div>
-{/staff_docs}
+{/staff_doc_upload}
+
 {/exp:channel:entries}
+</div>
