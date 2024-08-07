@@ -1,6 +1,7 @@
 {layout="layouts/_wrapper"}
-{exp:channel:entries channel="class_details" limit="1"}
 <div class="class-details-main">
+{exp:channel:entries channel="class_details" limit="1"}
+
 {class_info}
 <div class="class-details-heading">
 <h1>{class_info:class_name}</h1>
@@ -10,6 +11,8 @@
 <div class="class-details-image">
 {extra_image:file wrap="image"}
 </div>
+
 {general_content}
-</div>
+
 {/exp:channel:entries}
+</div>

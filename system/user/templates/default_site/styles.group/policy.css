@@ -1,0 +1,12 @@
+body{
+color:var(--color-on-surface);
+background:var(--color-surface-dim);
+}
+
+h2{
+color:var(--color-inverse-primary);
+}
+
+.main-container{
+margin:30px;
+}

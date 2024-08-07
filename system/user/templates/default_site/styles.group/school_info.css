@@ -1,0 +1,21 @@
+.school-info-main{
+min-height:65vh;
+background:linear-gradient(43deg, rgba(9, 26, 0, 0.3), rgba(207, 69, 0, 0.5), rgba(219,219,0,0.7));
+background-filter:blur(7px);
+border:2px solid var(--color-tertiary-container);
+color:var(--color-on-surface);
+margin:0 auto;
+max-width:50%;
+padding:20px; 
+border-radius:25px;
+
+span{
+color:var(--color-on-surface)!important;
+}
+ol{
+li{
+padding:15px;
+font-size:1em;
+}
+}
+}
